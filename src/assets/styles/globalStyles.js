@@ -1,0 +1,20 @@
+
+import { createGlobalStyle } from 'styled-components'
+
+const globalStyles = createGlobalStyle`
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Arial', sans-serif;
+background ${({ theme }) => theme.colors.background};
+color: ${({ theme }) => theme.colors.text};
+}
+`;
+ 
+
+
+export default globalStyles;
